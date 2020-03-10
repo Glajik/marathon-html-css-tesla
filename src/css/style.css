@@ -261,11 +261,7 @@ li.design-row__item::before {
   font-weight: 700;
 }
 
-.footer-copyright li::after {
+.footer-copyright li + li::before {
   content: "|";
   margin: 0 3px;
-}
-
-.footer-copyright li:last-child::after {
-  content: none;
 }
