@@ -74,7 +74,7 @@ body {
   margin-bottom: 25px;
 }
 
-.header-content__btn {
+.button {
   display: inline-block;
   border: 1px solid white;
   padding: 30px 62px;
@@ -82,7 +82,7 @@ body {
   transition: all .5s;
 }
 
-.header-content__btn:hover {
+.button:hover {
   background-color: #770302;
 }
 
@@ -237,4 +237,35 @@ li.design-row__item::before {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* section 6: Footer */
+.footer {
+  background-color: #690102;
+  margin-top: 100px;
+  padding-top: 85px;
+}
+
+.footer-btn {
+  text-align: center;
+}
+
+.footer-copyright>ul {
+  text-align: center;
+  margin-top: 85px;
+  padding-bottom: 20px;
+}
+
+.footer-copyright>ul>li {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.footer-copyright>ul>li::after {
+  content: "|";
+  margin: 0 3px;
+}
+
+.footer-copyright>ul>li:last-child::after {
+  content: none;
 }
