@@ -147,20 +147,22 @@ body {
   /* background-color: orangered; */
 }
 
-.close-btn__cross {
-  position: absolute;
-  top: 24px;
-  left: -10px;
+.close-btn::before, .close-btn::after {
+  content: "";
   width: 70px;
-  border: 1px solid white;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transform-origin: left;
 }
 
-.close-btn__cross-cw {
+.close-btn::before {
   transform: rotate(45deg);
 }
 
-.close-btn__cross-ccw {
+.close-btn::after {
   transform: rotate(-45deg);
+  bottom: -1px;
 }
 
 
