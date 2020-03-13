@@ -17,6 +17,14 @@ body {
   font-weight: 400;
 }
 
+.container {
+  padding: 0 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* Header */
+
 .header {
   height: 100vh;
   position: absolute;
@@ -24,12 +32,6 @@ body {
   background: rgb(0, 0, 0, 0.3);
   left: 0;
   right: 0;
-}
-
-.container {
-  padding: 0 15px;
-  max-width: 1230px;
-  margin: 0 auto;
 }
 
 .header-top {
@@ -85,6 +87,77 @@ body {
 .button:hover {
   background-color: #770302;
 }
+
+/* Menu */
+.menu {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu__list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu__list ul {
+  list-style: none;
+}
+
+.menu__list a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding-top: 30px;
+  padding-bottom: 14px;
+  padding-right: 30px;
+  border-bottom: 3px solid #B70021;
+  min-width: 368px;
+  transition: all .5s;
+}
+
+.menu__list a:hover {
+  border-color: white;
+  color: #B70021;
+  margin-left: 32px;
+  transform: scale(1.2);
+}
+
+.container-menu {
+  position: relative;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 37px;
+  right: 0;
+  cursor: pointer;
+  /* background-color: orangered; */
+}
+
+.close-btn__cross {
+  position: absolute;
+  top: 24px;
+  left: -10px;
+  width: 70px;
+  border: 1px solid white;
+}
+
+.close-btn__cross-cw {
+  transform: rotate(45deg);
+}
+
+.close-btn__cross-ccw {
+  transform: rotate(-45deg);
+}
+
+
 
 /* section 1: Slider */
 .slider__item {
