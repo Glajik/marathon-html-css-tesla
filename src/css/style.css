@@ -90,11 +90,16 @@ body {
 
 /* Menu */
 .menu {
-  background: #000;
+  background-color: #000;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
+  transition: ease-in 0.2s;
+}
+
+.menu.active {
+  left: 0;
 }
 
 .menu__list {
