@@ -352,11 +352,21 @@ li.design-row__item::before {
   margin: 0 3px;
 }
 
+@media (max-width: 1230px) {
+  .design__images img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 930px) {
   .advantages-inner__row {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+  }
+
+  .advantages {
+    margin-bottom: 100px;
   }
 
   .advantages-inner__row:last-child {
@@ -385,6 +395,26 @@ li.design-row__item::before {
 
   .advantages__img img {
     width: 100%;
+  }
+
+  ol.design-row {
+    margin-top: 50px;
+  }
+
+  li.design-row__item {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  ol.design-row {
+    display: block;
+  }
+
+  li.design-row__item {
+    max-width: 100%;
+    padding-left: 20px;
+    margin-bottom: 30px;
   }
 }
 
